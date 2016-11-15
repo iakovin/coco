@@ -1,0 +1,12 @@
+<h1>Users#new</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+
+<%= simple_form_for(@user) do |a| %>
+  <%= a.input :last_name %><br />
+  <%= a.input :first_name %><br />
+  <%= a.input :email %><br />
+  <%= a.submit class: "btn btn-primary"%>
+<% end %>
+
+<%= link_to "return to the list", "/users" %>
+

@@ -1,0 +1,9 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+
+<h1>Hi <%= @user.first_name %> ! </h1>
+
+<%= link_to "delete my account", user_path(@user), method: :delete, data: { confirm: "Are you sure?" } %>
+    || <%= link_to 'edit', edit_user_path(@user) %>
+    || <%= link_to "return to the list", "/users" %>
+
