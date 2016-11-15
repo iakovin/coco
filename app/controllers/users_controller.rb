@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   end
 
   def show # GET /users/:id
+    @nest = @user.nest
   end
 
   def new # GET /users/new
