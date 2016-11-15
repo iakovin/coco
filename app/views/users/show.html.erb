@@ -4,6 +4,7 @@
 <h1>Hi <%= @user.first_name %> ! </h1>
 
 <%= link_to "delete my account", user_path(@user), method: :delete, data: { confirm: "Are you sure?" } %>
+    || <%= link_to 'share your nest', new_nest_review_path(@user.id) %>
     || <%= link_to 'edit', edit_user_path(@user) %>
     || <%= link_to "return to the list", "/users" %>
 
