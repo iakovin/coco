@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :update, :show, :edit, :create, :index, :destroy] do
     resources :nests, only: [:new, :create, :show, :edit, :destroy]
+      resources :user_reviews, only: [:new, :create]
   end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
